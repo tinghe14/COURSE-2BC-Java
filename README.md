@@ -1,6 +1,6 @@
-# COURSE-2Bootcamp-Java
+# COURSE-2BC-Java
 
-My Java Code for 2021 Fall Bootcamp Java Course.
+My Java Code for 2021 Fall Java Course.
 
 Coding assignments completed In Class:
 
