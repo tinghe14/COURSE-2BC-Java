@@ -22,8 +22,20 @@
       * type conversions: (int),(double)
     * errors:
       * store a variable greater than 2 billion into an int variable
-  * non-numeric data type:
-  * constant variables:
+  * non-numeric data type：
+    * char
+      * single quote
+    * strings
+      * double quote
+    * errors:
+      * to use double quotes around a character literal
+    * others:
+      * common escape sequences: \n, \t, \' single auote, \'' double quote, \\ backslash
+      * getting strings from input:
+        * whitespace character defines as a character used to represent horizontal and vertical spaces in text, including spaces, tabs and newline character
+        * without whitespaces: automatically skips initial whitespace then gets characters until the next whitespace is seen, userString = scnr.next()
+        * with whitespaces: getting an entire line into string, userString = nextLine()
+  * constant variables: final datatype UPPER_CASE_LETTER (seperated by underscore)
 
 ```diff
 +3. Simple control flow constructs for decision and repetition, including boolean expressions
