@@ -58,6 +58,7 @@
 * logical operators: &&, ||, !
 ```diff
 +4. Nested control flow and altenative construct for selection (switch) and repetition (for, do/while) in Java
+```
 * loops:
   * while loop: loop body is the loopshould iterature
     * common error: to create a infinite loop, often by forgetting to update a variable in the body, or by creating a loop expression whose evaluation to false isn't always reachable
@@ -70,7 +71,7 @@
       * break in a loop causes an immediate exit of the loop
       * continue in a loop causes an immediate jump to the loop condition check
     * do while loop: do {} while ();    
-```
+
 **Block B**
 ```diff
 +1. Decomposition and design; defining and excuting subroutines. Variable scoping rules and passing mechanisms will also be covered
