@@ -1,6 +1,6 @@
 # COURSE-2BC-Java
 
-My Java Code for 2021 Fall Java Course (1 month) and [study notes](https://github.com/tinghe14/COURSE-2BC-Java/blob/main/Study%20Note.md) for better memorize and fast catach up. 
+My Java Code for 2021 Fall Java Course (1 month) and [study notes](https://github.com/tinghe14/COURSE-2BC-Java/blob/main/Study%20Note.md) for better memorize and faster catach up. 
 
 Coding assignments completed In Class:
 
