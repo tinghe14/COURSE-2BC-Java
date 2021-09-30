@@ -16,4 +16,4 @@ Coding assignments completed In Class:
   - finish date: Sept 29, 2021
   - given description file to create a maze with solid walls
   - use recursive method (depth-search-first) to find a path of maze without going through walls
-  - ![my output]()
+  - ![my output](https://github.com/tinghe14/COURSE-2BC-Java/blob/main/3%20Maze/output.png)
