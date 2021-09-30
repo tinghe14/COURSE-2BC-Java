@@ -8,7 +8,6 @@ Coding assignments completed In Class:
   - finish date: Sept 15,2021
   - simulate the experiemental process
   - draw the routes in canvas 
-  - ![my output](https://github.com/tinghe14/COURSE-2BC-Java/blob/main/1%20Brownian%20Motion%20Simulation/output.png)
 - [Simplified perceptron](https://github.com/tinghe14/COURSE-2BC-Java/tree/main/2%20Perceptron)
   - finish date: Sept 22, 2021
   - linear hyperplane to seperate data
