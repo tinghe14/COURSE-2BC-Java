@@ -5,7 +5,7 @@ My Java Code for 2021 Fall Java Course (1 month) and [study notes](https://githu
 Coding assignments completed in Class:
 
 - [Simulation of brownian motion](https://github.com/tinghe14/COURSE-2BC-Java/tree/main/1%20Brownian%20Motion%20Simulation)
-  - finish date: Sept 15,2021
+  - finish date: Sept 15, 2021
   - simulate the experiemental process
   - draw the routes in canvas 
 - [Simplified perceptron](https://github.com/tinghe14/COURSE-2BC-Java/tree/main/2%20Perceptron)
