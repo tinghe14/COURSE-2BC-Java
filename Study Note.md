@@ -77,6 +77,24 @@
 +1. Decomposition and design; defining and excuting subroutines. Variable scoping rules and passing mechanisms will also be covered
 ```
 * primitive and reference types
+  * wrapper class:
+    * primitive type: directly stores the data for that variables type
+    * reference type: refer to an instance of a class, aslo known as an object
+      * many of java's built-in class, such as java's collection library only work with objects, for example 
+        * a programmer can create an arraylist containing integer elements, ArrayList<Integer> frameScores but not an ArrayList of int elements 
+  * memory allocation:
+    * a wrapper class object is immutable. we cannot change the object via methods or variable assignment after object creation
+    * everytime a new value is assigned to an integer variable, memory for a new integer object with the value is allocated, and the reference (or address) of this new object is assigned to the reference variable
+  * wrapper class allows the program to create objects that store a single primivate type value, also provide methods for converting between primitive types (int to double), between number system (decimal to binary)
+    * wrapper class conversions:
+      * autoboxing: automatic conversion of primitive types to the corresponding wrapper class
+      * unboxing: automatic conversion of wrapper class objects to the corresponfing primitive types
+        * num.IntValue(), num.doubleValue(), num.longValue()
+      * converting reference type to and from strings:
+        * serveral of these methods are static methods, meanings they can be called by a program without creating an object. To call a staitic methods, the name of the class and a '.' must precede the static method name, such as Integer.toString(16);
+        * someInteger.toString = Integer.toString(someInteger), Integer.paseInt(someInteger), Integer.valueOf(someInteger), Integer.toBinaryString(someInteger)
+  * common error:
+    * logic error using == != to compare reference variables of wrapper classes, and should use equals() and compareTo() method
 * user-defined method basics
 * unit testing
 * Java documentation for methods
