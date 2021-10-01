@@ -76,22 +76,36 @@
 ```diff
 +1. Decomposition and design; defining and excuting subroutines. Variable scoping rules and passing mechanisms will also be covered
 ```
+* primitive and reference types
+* user-defined method basics
+* unit testing
+* Java documentation for methods
+
 ```diff
 +2. Fudamental concepts and applications of one dimensional arrays and file I/O in Java
 ```
+* simple arrays
+* Scanner method
+* file I/O
 ```diff
 +3. Two dimensional arrays (matrices) and common usage patterns for arrays
 ```
+* Advanced arrays
 **Block C**
 ```diff
 +1. Defiing and using simple classes in Java
 ```
+* simple class
+* unit testing
 ```diff
 +2. Classes with arrays, arrays of objects, advanced class implementation and usage
 ```
+* advanced class
+* arraylist
 ```diff
 +3. recursion
 ```
+* recursive subroutines
 **Block D**
 ```diff
 +1. polumorphism to include inheritance, overloading, overriding, use of super
