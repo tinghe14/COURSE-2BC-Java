@@ -10,7 +10,7 @@ Coding assignments completed in Class:
   - draw the routes in canvas 
 - [Simplified perceptron](https://github.com/tinghe14/COURSE-2BC-Java/tree/main/2%20Perceptron)
   - finish date: Sept 22, 2021
-  - linear hyperplane to seperate data
+  - build linear hyperplane to seperate data
 - [Maze](https://github.com/tinghe14/COURSE-2BC-Java/tree/main/3%20Maze)
   - finish date: Sept 29, 2021
   - given description file to create a maze with solid walls
