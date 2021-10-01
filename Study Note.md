@@ -132,8 +132,10 @@
     * assert testExpression: "detailedMessage";
     * note that assertions are not enabled by default. a programmer must execute java programs with additional command-line options in order to enable assertions, such as java -ea class name
     * a good test vectors also include border cases that represent fringe scenario. for example. border cases for the above method might include inputs 0 and 9999999 (huge number). the programmer tries to think of any extreme (or weird) inputs that might cause the method to fail.
+* using scanner in method:
+  * a program should only use one Scanner per input stream. Internally, a Scanner object may read more input than needed to make subsequent reads faster. Thus, using multiple Scanner for the same input stream may lead to unexpected result.
 * Java documentation for methods
-
+  * Javadoc is a tool that parses specially formatted multi-line comments to generate program documentatin in HTML format. The program documentation is also known as an API (application programming interface). This doc comment begins with /** and end with */. Two asterisks distinguish doc comments from regular comments.
 ```diff
 +2. Fudamental concepts and applications of one dimensional arrays and file I/O in Java
 ```
