@@ -95,8 +95,43 @@
         * someInteger.toString = Integer.toString(someInteger), Integer.paseInt(someInteger), Integer.valueOf(someInteger), Integer.toBinaryString(someInteger)
   * common error:
     * logic error using == != to compare reference variables of wrapper classes, and should use equals() and compareTo() method
+* character operations: isLetter(), isDigit(), isWhitespace()
+* Random numbers:
+  * Random randGen = new Random(); // new random number generateor
+  * randGen.nextInt(2); // yield 2 possible values 0 and 1;
+  * Random randGen = new Random(15); // using the same seed for each program run
 * user-defined method basics
+  * methods: program reduendancy can be reduced by creating a grouping of predefinded statements for repeatedly used operations, known as method
+    * method definition: consist of new method's name and a block of statments: public static double calcPizzaArea() {/* block of statement */}
+      * a method call is an invocation of a method's name; a method must be defined within a class
+      * access modifier: public static
+        * public indicates the method may be called from any class in the program
+        * static indicates the methods only uses values that passed to the method
+      * returning a value of a method
+        * a method can only return one time
+        * a return type of void indicates that a method does not return any value
+      * parameters:
+        * a parameter is a method input specified in a method definition
+        * an arugument is a value provided to a method's parameter during a method call
+          * a parameter is like a variable declaration. upon a call, the parameter's memory location is allocated, and the parameter is assigned with the argument's value. upon returning to the original call location, the parameter is deleted from the memory
+        * a method definition with no parameter must still have the paretheses
+      * void method: the void keyword indicates a method does not return a value
+      * reasons for defining methods:
+        * modular and incremental program development
+          * modular development is the process of dividing a program into separate modules that can be developed and tested separately and then integrated into a single program
+          * incremental development is a process in which a programmer writes, compile, and tests a small amount of code, then writes, complies and tests a small amount more, and so on
+    * memory allocation:
+      * each method call creates a new set of local variables, each return causess those local variables to be discarded.
+    * method name overloading or method overloading:
+      * a program has two methods with the same name but differing in the number of types of parameters
+    * common error: the name of a defined variable or method item is only visible to part of a program, know as the item's scope. a variable declared in a method has scope limited to inside that method. in fact, because a compiler scans a program line-by-line from top-to-bottom, the scope starts after the declaration until the method's end.
 * unit testing
+  * good practice is to test small parts of the program individually, before testing the entire program, typically a method
+  * a unit tset is typically conducted by creating a testbench, aka test harness 
+  * manually examining a program's printed output is cumbersome and error prone. A better test harness would only print a message for incorrect output. eg: assert is an operator that prints an error message and exits the program if the provided test expression evaluates to false. having the form:
+    * assert testExpression: "detailedMessage";
+    * note that assertions are not enabled by default. a programmer must execute java programs with additional command-line options in order to enable assertions, such as java -ea class name
+    * a good test vectors also include border cases that represent fringe scenario. for example. border cases for the above method might include inputs 0 and 9999999 (huge number). the programmer tries to think of any extreme (or weird) inputs that might cause the method to fail.
 * Java documentation for methods
 
 ```diff
