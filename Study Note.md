@@ -146,6 +146,7 @@
 +3. Two dimensional arrays (matrices) and common usage patterns for arrays
 ```
 * Advanced arrays
+ 
 **Block C**
 ```diff
 +1. Defiing and using simple classes in Java
@@ -161,6 +162,7 @@
 +3. recursion
 ```
 * recursive subroutines
+ 
 **Block D**
 ```diff
 +1. polymorphism to include inheritance, overloading, overriding, use of super
