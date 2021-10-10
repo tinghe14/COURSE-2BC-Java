@@ -213,6 +213,22 @@
 ```diff
 +2. exception handling in java
 ```
+* exception basics: error-checking code is code a programmer writes to detect and handle errors that occur during program execution. An exception is a circumstance that a program was not designed to handle, such as if the user enters a negative heigt
+  * exception-handling constructs: the language has special constructs, try, throw and catch to keep error-checking code separate and to reduce redundant checks. 
+    * try { ... throw objectOfExceptionType; ...} catch (exceptionType excptObj) {//handle exception, eg print message}
+* exceptions with methods
+      * try: a try block surrounds normal code, which is exited immediately if a throwe statement executes
+      * throw: a throw statement appears within a try block; if reached, execution jumps immediately to the end of the try block. the code is wrriten so only error suitations lead to reaching a throw. the throw statement provides an object of type Throwable, such as an object of type Exception or its subclasses. the statement is said to throw an exception of the particular type. A throw statement's syntax is similar to a return statement
+      * catch: a catch clause immediately follows a try block; if the catch was reached due to an exception thrown of the catch clause's parameter type, the clause executes. the clause is said to catch the thrown exception. A catch blockj is called handler because it handles an exception
+      * the object thrown and caught must be of the Throwable class type, or a class inheriting from Throwable. As discussed elsewhere, Java offers several built-in Throwable types like Error, Exception, and classes derived from these. The Exception class (and other Throwable types) has a constructor that can be passed a String, as in throw new Exception("Invalid weight."); which allocates a new Exception object and sets an internal String value that can later be retireved using the getMessage() method, as in System.out.println(excpt.getMessage())
+  * common exception types:
+    * EOFException: end of file or end of stream has been reached unexpectedly during input
+    * InputMismatchException: Received input doesn't match excepted type or input is out of range for the expected type (thrown by Scanner)
+    * ArrayIndexOutOfBoundsException: an array has been accessed with an illegal index
+    * FileNotFoundException: attempt to open a file denoted by a filename failed
+    * ArithmeticException: Arithmetic condition fialed
+* multiple handlers
+* exception handling in file input/output
 ```diff
 +3. sorting and searching algorithms, alhorithmic time complexitiy
 ```
