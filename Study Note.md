@@ -197,10 +197,19 @@
        * overloading: methods with the same name must have different parameter types
        * overriding: a derived class member method take precedence over a base class memeber method with the same name and parameter types
    * calling a base class method
- 
  * Polymorphism
+   * polymorphism: refers to determining which program behavior to execute depending on data types
+     * compile-time polymorphism: method overloading is a form of compile-time polymorphism wherein the compiler determines which of several identically-named methods to call based on the method's arguments
+     * runtime polymorphism: wherein the compiler can't make determination but instrad the determination is made while the program is running 
+       * it dynamically determines the correct method to call based on the actual object type to which the variable (or element) refers.
  * ArrayLists of Objects
+   * because all classes are derived from the Object class, programmers can take advantage of runtime polymorphism in order to create a collerction (e.g., ArrayList) of objects of various class types and perform operations on the elements
+   * ArrayList<Object> objList = new ArrayList<Object>();
  * Is-a versus has-a relationships
+   * The concept of inheritance is commonly confused with the idea of composiution. composition is the idea that one object may be made up of other objects, such as a MotherInfo class being made up of objects like firstName (which may be a String object), childrenData (which may be an ArrayList of ChildInfo objects), etc. Defining that MotherInfo class doesn't involve inheritance, but rather just composing the sub-objects in the class.
+     * composition contains the 'has-a' relationship
+     * inheritance contains the 'is-a' relationship. A MotherInfo object 'is a' kind of PersonInfo. The MotherInfo class thus inherits from the PersonInfo class.
+   * UML diagrams: programmers commonly draw class inheritance relationships using UML notation
 ```diff
 +2. exception handling in java
 ```
