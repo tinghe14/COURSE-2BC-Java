@@ -163,8 +163,42 @@
 * recursive subroutines
 **Block D**
 ```diff
-+1. polumorphism to include inheritance, overloading, overriding, use of super
++1. polymorphism to include inheritance, overloading, overriding, use of super
 ```
+ * Derived classes
+   * Derived class concept: one class is similar to another class but with some additions or variations
+   * Inheritance:
+     * base class (superclass)
+     * derived class (subclass)
+     * derived class is a class that is derived from another class
+     * inhertiance: the derived class inherit the properties of the base class
+     * an object declared of a derived class type has access to all the public members of the derived class as well as the public members of the base class
+     * a derived class is declared by placing the keyword extends after the derived class name, followed by the base class name.
+       * Eg: class DerivedClass extends BaseClass {...}
+   * inheritance scenarios:
+     * a derived class can serve as a base class for another class
+     * a class can serve as a base class for multiple derived classes
+     * a class can only be derived from one base class directly (otherwise, compiler error)
+ * access by members of derived class
+   * member access
+     * the members of a derived class have access to the public memebers of the base class, but not to the private members of the base class
+   * protected member access
+     * recall that members of a class may have their access specificed as public or private. a third access specifier is protected
+     * protected: provides access to derived classed and all classes in the same package but not by anyone else
+       * no specifier access specifier: accessible by self and other classes in the same package
+ * Overriding memeber methods
+   * overriding
+     * when a derived class defines a memeber method that has the same name and parameters as a base class's method, the member method is said to override the base class's method
+     * @override annotation is placed above this method so the compiler verifies that an identical base class method exists (optional)
+       * the @override annotation causes the compiler to produce an error when a programmer mistakenly specifies parameters that are different from the parameters of the method that should be overridden or misnames the overriding method
+     * overriding vs overloading
+       * overloading: methods with the same name must have different parameter types
+       * overriding: a derived class member method take precedence over a base class memeber method with the same name and parameter types
+   * calling a base class method
+ 
+ * Polymorphism
+ * ArrayLists of Objects
+ * Is-a versus has-a relationships
 ```diff
 +2. exception handling in java
 ```
