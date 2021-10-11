@@ -197,6 +197,8 @@
        * overloading: methods with the same name must have different parameter types
        * overriding: a derived class member method take precedence over a base class memeber method with the same name and parameter types
    * calling a base class method
+     * an overriding method can call the overridden method by using the super keyword, eg: super.getDescription(). The super keyword is a reference variable used to call the parent class's methods or constructors
+       * common error: leave off super when wanting to call a base class method. without the use of super keyword, the call to getDescription() refers to itself(a recursive call)
  * Polymorphism
    * polymorphism: refers to determining which program behavior to execute depending on data types
      * compile-time polymorphism: method overloading is a form of compile-time polymorphism wherein the compiler determines which of several identically-named methods to call based on the method's arguments
