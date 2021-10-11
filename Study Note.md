@@ -238,6 +238,7 @@
   * Most FileReader methods and constructors throw exceptions of type IOException (eg, input/output exception), a built-in checked exception ionheriting from the Exception class. Specifically, read() may throw an IOException if an error is encountered while reading the file, and close() may throw an IOException if an error occurs while attempting to close the file. FileReader's constructors may throw a FileNotFoundException, which itself inherits from IOException, if the specified file can't be opened for reading
   * a good practice is to use finally blocks for coide that should be executed both when the program executes normally and when the program throws an exception, such as closing files that are opened and accessed within a try block
   * the following is a good version, using a finally block to ensure that the input stream and file are always closed. The code within the try block opens a file and reads characters from that file. if an error occurs while reading from the file, an IOException will be thrown, and the catch block will report the exception. The finally block executes after the try and catch blocks have finished execution calling closeFileReader(), which will close the file. As an exception may be thrown while closing a file, the closeFileReader() method also includes try and catch blocks.
+ ![image](https://github.com/tinghe14/COURSE-2BC-Java/blob/main/Picture/finally.png)
 ```diff
 +3. sorting and searching algorithms, alhorithmic time complexitiy
 ```
