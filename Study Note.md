@@ -216,7 +216,6 @@
 * exception basics: error-checking code is code a programmer writes to detect and handle errors that occur during program execution. An exception is a circumstance that a program was not designed to handle, such as if the user enters a negative heigt
   * exception-handling constructs: the language has special constructs, try, throw and catch to keep error-checking code separate and to reduce redundant checks. 
     * try { ... throw objectOfExceptionType; ...} catch (exceptionType excptObj) {//handle exception, eg print message}
-* exceptions with methods
       * try: a try block surrounds normal code, which is exited immediately if a throwe statement executes
       * throw: a throw statement appears within a try block; if reached, execution jumps immediately to the end of the try block. the code is wrriten so only error suitations lead to reaching a throw. the throw statement provides an object of type Throwable, such as an object of type Exception or its subclasses. the statement is said to throw an exception of the particular type. A throw statement's syntax is similar to a return statement
       * catch: a catch clause immediately follows a try block; if the catch was reached due to an exception thrown of the catch clause's parameter type, the clause executes. the clause is said to catch the thrown exception. A catch blockj is called handler because it handles an exception
@@ -227,8 +226,18 @@
     * ArrayIndexOutOfBoundsException: an array has been accessed with an illegal index
     * FileNotFoundException: attempt to open a file denoted by a filename failed
     * ArithmeticException: Arithmetic condition fialed
+* exceptions with methods
+  * the power of exceptions becomes clearer when used within a method. if an exception is thrown within a method and not caught within that method, then the method is immediately exited and calling method is checked for a handler, and so on up the method call hierarchy.
+    * suppose getWeight() throws an exception of type InputMismatchException. GetWeight() immediately exits, up to main() where the call was in a try block, so the catch block catches the exception
+    * if a method throws an exception not handled within the method, a programmer must include a throws clause within the method declaration, by appending throws Exception before the opening curly brace. Java requires that a programmer either provides an exception handler or specifies that a method may throw an exception by appending a throws clause to all methods that may throw checked exceptions
 * multiple handlers
+  * different throwsa in a try block may throw different exceptions types. Multiple handlers may exist, each handling a different typoe. the first matching handler executes; remaining handlers are skipped
+    * catch (Throwable thrwObj) is a catch-all handler that catches any error or exception as both are derived from the Throwable class this handler is useful when listed as the last handler
+  * common error: is to place a catch block intended to handle exceptions of a base class before catch blocks intended to handle exceptions of a derived class, resulting in a compiler error with a message such as "exception has already been caught"
 * exception handling in file input/output
+  * Most FileReader methods and constructors throw exceptions of type IOException (eg, input/output exception), a built-in checked exception ionheriting from the Exception class. Specifically, read() may throw an IOException if an error is encountered while reading the file, and close() may throw an IOException if an error occurs while attempting to close the file. FileReader's constructors may throw a FileNotFoundException, which itself inherits from IOException, if the specified file can't be opened for reading
+  * a good practice is to use finally blocks for coide that should be executed both when the program executes normally and when the program throws an exception, such as closing files that are opened and accessed within a try block
+  * the following is a good version, using a finally block to ensure that the input stream and file are always closed. The code within the try block opens a file and reads characters from that file. if an error occurs while reading from the file, an IOException will be thrown, and the catch block will report the exception. The finally block executes after the try and catch blocks have finished execution calling closeFileReader(), which will close the file. As an exception may be thrown while closing a file, the closeFileReader() method also includes try and catch blocks.
 ```diff
 +3. sorting and searching algorithms, alhorithmic time complexitiy
 ```
