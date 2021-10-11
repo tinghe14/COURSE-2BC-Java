@@ -240,7 +240,7 @@
   * the following is a good version, using a finally block to ensure that the input stream and file are always closed. The code within the try block opens a file and reads characters from that file. if an error occurs while reading from the file, an IOException will be thrown, and the catch block will report the exception. The finally block executes after the try and catch blocks have finished execution calling closeFileReader(), which will close the file. As an exception may be thrown while closing a file, the closeFileReader() method also includes try and catch blocks.
  ![image](https://github.com/tinghe14/COURSE-2BC-Java/blob/main/Picture/finally.png)
   * writing to a file with exception handling
- ![image]()
+ ![image](https://github.com/tinghe14/COURSE-2BC-Java/blob/main/Picture/writing%20a%20file.png)
 ```diff
 +3. sorting and searching algorithms, alhorithmic time complexitiy
 ```
