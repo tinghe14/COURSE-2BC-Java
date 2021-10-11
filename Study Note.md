@@ -244,3 +244,21 @@
 ```diff
 +3. sorting and searching algorithms, alhorithmic time complexitiy
 ```
+* searching and algorithms
+  * algorithm is a sequence of steps for accomplishing a task
+  * linear search: is a search algorithm that starts from the begining of a list, and checks each element until the search key is found or the end of list is reached
+* binary search
+  * linear search may require searching all list elements, which can lead to long runtimes
+  * because a contact list is sorted, a faster search, known as binary search, checkes the middle contact first. if the desired contact comes alphabetically before the middle contact, binary search will then search the first half and otherwise the last half. Each step reduces the contacts that need to be searched by half.
+![image](https://github.com/tinghe14/COURSE-2BC-Java/blob/main/Picture/binary%20search.png)
+* recursive algorithm: search
+  * recursive search method: a recursive method is a natural match for the recursive binary search algorithm
+    * the recursive method has an if-else statement. The if branch ends the recursion, known as the base case. the else branch has recursive calls
+![image](https://github.com/tinghe14/COURSE-2BC-Java/blob/main/Picture/recursive%20binary%20search.png)
+* adding output statements for debugging
+* O notation
+* algorithm analysis
+* sorting: introduction
+* selection sort
+* insertion sort
+* merge sort
