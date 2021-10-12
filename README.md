@@ -16,3 +16,12 @@ Coding assignments completed in Class:
   - given description file to create a maze with solid walls
   - use recursive method (depth-search-first) to find a path of maze without going through walls
   - ![my output](https://github.com/tinghe14/COURSE-2BC-Java/blob/main/3%20Maze/output.png)
+- [Money Manager](https://github.com/tinghe14/COURSE-2BC-Java/tree/main/4%20Money%20Manager)
+  - finish date: Oct 11, 2021
+  - utilized polymorphism through inheritance
+  - used exception handling, do significant testing, and integrate sorting and searching algorithms
+  - [detailed requirement url](https://docs.google.com/document/d/1CcWiAWTJQ76aREjh2ZqwZhV3dBjQ6zDi/edit)
+  - one sample output for money bag (more in the folder)
+  - ![sample output](https://github.com/tinghe14/COURSE-2BC-Java/blob/main/4%20Money%20Manager/Test%20Pic/mb%2013.png)
+  - one sampe output for wallet (more in the folder)
+  - ![sample output](https://github.com/tinghe14/COURSE-2BC-Java/blob/main/4%20Money%20Manager/Test%20Pic/w%204.png)
